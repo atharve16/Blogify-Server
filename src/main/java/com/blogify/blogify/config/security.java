@@ -45,7 +45,7 @@ public class security {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.asList("http://localhost:5173/"));
+        config.setAllowedOrigins(Arrays.asList("http://localhost:5173/", "https://blogify-steel-three.vercel.app/"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
         config.setAllowCredentials(true); // Optional if using cookies or HTTP Basic Auth
